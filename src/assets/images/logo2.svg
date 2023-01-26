@@ -1,0 +1,30 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+ <title>Logo1</title>
+
+ <g>
+  <title>Layer 1</title>
+  <polyline fill="none" stroke="#000" points="896,235 897,235 " id="svg_10" stroke-linecap="round"/>
+  <polyline fill="none" stroke="#000" points="949,368 950,368 951,368 " id="svg_11" stroke-linecap="round"/>
+  <rect fill="#fff" stroke="#000" x="509" y="375" width="2" height="0" id="svg_14"/>
+  <rect fill="#fff" stroke="#000" x="525" y="350" width="1" height="0" id="svg_24"/>
+  <g id="svg_2">
+   <rect transform="matrix(0.135853, 0.125403, -0.126685, 0.134479, 106.569, 25.2639)" fill="#84D3DB" stroke="#000" x="-25.0094" y="242.02741" width="88" height="26" id="svg_21" stroke-width="0"/>
+   <rect stroke-width="0" fill="#B1FFFF" stroke="#000" x="3.41788" y="46.84551" width="94.3636" height="3.1259" id="svg_18"/>
+   <ellipse fill="#84D3DB" stroke="#000" cx="69.58319" cy="47.99473" id="svg_20" rx="13.28149" ry="21.14579" stroke-width="0"/>
+   <g id="svg_37">
+    <rect fill="#84D3DB" stroke="#000" x="17.48883" y="27.95877" width="13.18861" height="42.10771" id="svg_12" stroke-width="0"/>
+    <ellipse fill="#84D3DB" stroke="#000" cx="31.07549" cy="49.01919" id="svg_17" rx="13.28149" ry="21.00132" stroke-width="0"/>
+   </g>
+   <g id="svg_40" stroke-width="0">
+    <rect fill="#ffffff" stroke="#000" x="23.64529" y="36.46962" width="6.4152" height="23.93021" id="svg_38"/>
+    <ellipse fill="#ffffff" stroke="#000" cx="30.25411" cy="48.43846" id="svg_39" rx="6.46038" ry="11.93524"/>
+   </g>
+   <path id="svg_42" d="m73.21577,56.50121l4.38673,4.04932l-1.75772,1.86586l-4.38673,-4.04932l1.75772,-1.86586z" stroke-width="0" stroke="#000" fill="#ffffff"/>
+   <ellipse fill="#ffffff" stroke="#000" cx="69.84855" cy="48.36249" id="svg_41" rx="7.3904" ry="11.74182" stroke-width="0"/>
+   <rect fill="#84D3DB" stroke="#000" stroke-width="0" x="12.13842" y="38.50211" width="3.48291" height="19.65179" id="svg_43" rx="10"/>
+   <rect fill="#84D3DB" stroke="#000" stroke-width="0" x="86.20828" y="38.15734" width="3.48291" height="19.65179" id="svg_44" rx="10"/>
+   <rect fill="#84D3DB" stroke="#000" stroke-width="0" x="92.01313" y="42.75426" width="2.32194" height="10.34305" id="svg_46" rx="10"/>
+   <rect fill="#84D3DB" stroke="#000" stroke-width="0" x="8.07503" y="42.9841" width="2.32194" height="10.34305" id="svg_45" rx="10"/>
+  </g>
+ </g>
+</svg>
