@@ -5,7 +5,6 @@ import {FaDumbbell} from 'react-icons/fa'
 import {RxCross1} from 'react-icons/rx'
 import { Link, animateScroll as scroll } from "react-scroll";
 // import {ReactComponent as Logo} from '../assets/images/logo.svg'
-import logo from '../assets/images/logo.png'
 import resume from '../assets/pdf/DavidQuinesResume.pdf'
 import {Fade} from 'react-awesome-reveal'
 const Navbar = () => {

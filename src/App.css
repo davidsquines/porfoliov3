@@ -1,9 +1,9 @@
 :root{
-  --background-color1: #1C1C1C;
-  --background-color2: #808080;
+  --background-color1:rgb(11, 10, 7);
+  --background-color2: rgb(193, 207, 218);
   --primary-text-color: #F1F1F1;
-  --secondary-color1: #82B7DC;
-  --secondary-color2: #3f3e3e;
+  --secondary-color1: rgb(255, 105, 120);
+  --secondary-color2: rgb(148, 28, 47);
 }
 html{
   background: var(--background-color1);
@@ -40,11 +40,7 @@ html{
   position: relative;
   padding: 0 15px;
   top: 0;
-  background: linear-gradient(
-    to right,
-    var(--background-color1) 70%,
-    var(--background-color2) 30%
-  );
+  background: var(--background-color1);
 
 }
 .menu-bars{
@@ -73,6 +69,7 @@ html{
 .logo{
   font-size: 5.0rem;
   margin-left: 50px;
+  color: var(--secondary-color2);
 }
 .nav-elements ul a.active::after {
   content: '';
@@ -134,6 +131,7 @@ html{
     width: 100vw;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
+    z-index: 4;
     
   }
 
@@ -141,6 +139,7 @@ html{
     display: block;
     cursor: pointer;
     right: 10px;
+    color: var(--secondary-color2);
     
   }
   .nav-elements.active {
@@ -171,14 +170,60 @@ html{
 #hero{
   width: 100%;
   height: 100vh;
-  background: linear-gradient(
-    to right,
-    var(--background-color1) 70%,
-    var(--background-color2) 30%
-  );
   position: relative;
-
+  z-index:1;
   display: block;
+  
+}
+.spacer{
+  aspect-ratio: 960/100;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.layer1{
+  background-image: url('../src/assets/images/wave9.svg');
+}
+.flip{
+  transform: rotate(180deg) ;
+}
+
+.wave-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-bg svg {
+  position: relative;
+  display: block;
+  width: calc(104% + 1.3px);
+  height: 500px;
+  transform: rotateY(180deg);
+}
+
+.wave-bg .shape-fill-1 {
+  fill: var(--secondary-color2);
+}
+.wave-bg .shape-fill-2{
+  fill: var(--secondary-color1);
+
+}
+.wave-bg .shape-fill-3{
+  fill: var(--secondary-color2);
+}
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .wave-bg svg {
+      width: calc(104% + 1.3px);
+      height: 217px;
+  }
 }
 .intro{
   width: 80vw;
@@ -189,9 +234,9 @@ html{
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  top: 55px;
   gap: 100px;
   max-width: 1100px;
+  z-index: 3;
 }
 .intro-content-top{
   display: inline-flex;
@@ -208,12 +253,12 @@ html{
 .intro-text h1{
   font-size: clamp(40px, 8vw, 80px);
   margin: 50px 0;
-  color: var(--secondary-color1);
+  color: var(--secondary-color2);
 }
 .intro-text h3{
   font-weight: 100;
-  font-size: clamp(.9rem, 5vw, 2.3rem);
-  color: var(--primary-text-color)
+  font-size: clamp(20px, 1.5vw, 50px);
+  color: var(--primary-text-color);
 }
 /* .intro-text h4{
   color: var(--primary-text-color);
@@ -237,7 +282,7 @@ html{
   left: 8%;
   width: 100%;
   height: 100%;
-  border: 4px solid var(--primary-text-color);
+  border: 4px solid var(--secondary-color1);
   content:"";
   z-index: -1;
 }
@@ -246,7 +291,7 @@ html{
   display: inline-flex;
   align-items: flex-start;
   justify-content: flex-start;
-  color: var(--primary-text-color);
+  color: var(--secondary-color2);
   font-size: 1.0rem;
   padding-left: 0;
   width: 50%;
@@ -259,7 +304,7 @@ html{
   align-items: center;
   width: 100vw;
   position: relative;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   width: 100%;
 
@@ -275,28 +320,20 @@ html{
   width: 40%;
 }
 .social-media-icons{
-  position: fixed;
-  left: calc(100vw - 10rem);
-  bottom: -20px;
   z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0;
+  gap: 20px;
+  margin-top: 0;
+
 }
-.social-media-icons::after{
-  content: "";
-  display: block;
-  width: 2px;
-  height: 20vh;
-  overflow: auto;
-  margin: 0px auto;
-  background-color: var(--secondary-color1);
-}
-.social-media-icons li{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+
 .social-media-icons li > a{
   display: block;
   text-decoration: none;
-  color: var(--secondary-color1);
+  color: var(--secondary-color2);
   font-size: 1.8rem;
   z-index: 1000;
   transition: .1s ease-in-out;
@@ -330,20 +367,15 @@ html{
 @media screen and (max-width: 650px) {
   
   #hero{
-    background: linear-gradient(
-      var(--background-color1) 55%,
-      var(--background-color2) 40%
-    );
     height: 100vh;
     z-index: -1;
 
   }
   .intro-content-top{
     position: absolute;
-    top: 10px;
+    top: 100px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     margin-top:20px;
     margin-left: -20px;
   }
@@ -363,9 +395,8 @@ html{
     margin-bottom: 100px;
   }
   .intro-pic{
-    top: 300px;
+    top: 75px;
     left: 50px;
-
   }
   .intro-pic img{
     width: 250px;
@@ -382,8 +413,14 @@ html{
     z-index: -1;
   }
   .social-media-icons{
-    display: none;
+    position: absolute;
+    top: 30px;
   }
+  .social-media-icons li > a{
+    font-size: 1.5rem;
+  
+  }
+  
   
 }
 /*About Section*/
@@ -395,7 +432,7 @@ html{
   gap: 2.0rem;
 }
 #about h1{
-  color: var(--secondary-color1);
+  color: var(--secondary-color2);
   text-align: center;
   font-size: clamp(30px, 6vw, 70px);
 }
@@ -408,10 +445,10 @@ html{
 }
 .bio h3, .technologies h3{
   margin-bottom: 30px;
-  color: var(--secondary-color1);
+  color: var(--secondary-color2);
 }
 .bio p{
-  font-size: 1.2rem;
+  font-size: clamp(16px, 1.5vw, 24px);
   color: var(--primary-text-color);
 }
 .tech-container{
@@ -462,12 +499,12 @@ html{
   text-align: center;
 }
 #projects h1{
-  color: var(--secondary-color1);
-  font-size:clamp(30px, 6vw, 70px);;
+  color: var(--secondary-color2);
+  font-size: clamp(30px, 6vw, 70px);
   margin-bottom: 40px;
 }
 #projects h3{
-  color: var(--secondary-color1);
+  color: var(--secondary-color2);
 }
 
 .project-pic img{
@@ -532,6 +569,7 @@ html{
 }
 .card{
   width: 320px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -564,13 +602,11 @@ html{
 }
 .card h3{
   font-size: 2.0rem;
-  color: var(--primary-text-color) !important;
+  color: var(--primary-text-color);
   margin-bottom: 1px;
   transition: .2s ease-in-out;
 }
-.card:hover h3{
-  color: var(--secondary-color1) !important;
-}
+
 .card ul{
   display: inline-flex;
   align-items: stretch;
@@ -609,7 +645,7 @@ html{
     flex-direction: column;
   }
   #projects h1{
-    font-size: 1.0rem;
+
     margin-bottom: 10px;
   }
   #projects h3{
@@ -655,7 +691,7 @@ html{
   }
   .card h3{
     font-size: 1.5rem;
-    color: var(--secondary-color1) !important;
+    color: var(--primary-text-color) !important;
   }
   .card p{
     font-size: .9rem;
