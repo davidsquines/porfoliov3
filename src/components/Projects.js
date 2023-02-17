@@ -20,7 +20,7 @@ const Projects = () => {
           <div class="project-tile">
             <Fade duration={1000} delay={300} triggerOnce direction='up'>
             <div className="project-pic">
-              <img src={gotgains}/>
+              <img src={gotgains} alt='Got Gains landing page'/>
             </div>
             <div className="project-content">
               <h2>Got Gains</h2>
@@ -32,7 +32,7 @@ const Projects = () => {
                   <li>React.js</li>
                   <li>Node.js</li>
                 </ul>
-                <a href="https://github.com/davidsquines/GotGainsFrontend" target="_blank"><AiFillGithub/></a>
+                <a href="https://github.com/davidsquines/GotGainsFrontend" target="_blank" rel="noreferrer"><AiFillGithub/></a>
                 
               </span>
               
@@ -43,7 +43,7 @@ const Projects = () => {
           <div className="project-tile">
             <Fade duration={1000} delay={300}triggerOnce direction='up'>
               <div className="project-pic">
-                <img src={eureqapic}/>
+                <img src={eureqapic} alt='Eureqa Landing Page'/>
               </div>
               <div className="project-content">
                 <h2>Eureqa</h2>
@@ -55,7 +55,7 @@ const Projects = () => {
                     <li>Cloud Firestore</li>
                     <li>Java</li>
                   </ul>
-                  <a href="https://github.com/davidsquines/GotGainsFrontend" target="_blank"><AiFillGithub/></a>
+                  <a href="https://github.com/davidsquines/GotGainsFrontend" target="_blank" rel="noreferrer"><AiFillGithub/></a>
                   
                 </span>
                 
@@ -66,7 +66,7 @@ const Projects = () => {
           <div className="project-tile">
           <Fade duration={1000}  triggerOnce direction='up'>
               <div className="project-pic">
-                <img src={chorosx} />
+                <img src={chorosx} alt='ChorosX landing page'/>
               </div>
               <div className="project-content">
                 <h2>ChorosX</h2>
@@ -78,7 +78,7 @@ const Projects = () => {
                     <li>Cloud Firestore</li>
                     <li>React</li>
                   </ul>
-                  <a href="https://github.com/davidsquines/GotGainsFrontend" target="_blank"><AiFillGithub/></a>
+                  <a href="https://github.com/davidsquines/GotGainsFrontend" target="_blank" rel="noreferrer"><AiFillGithub/></a>
                   
                 </span>
                 
@@ -95,7 +95,7 @@ const Projects = () => {
             <div className='card'>
               <span className='card-icons'>
                 <AiOutlineFolder/>
-                <a href='https://github.com/Dictionary-Attack' target='_blank'><GoLinkExternal/></a>
+                <a href='https://github.com/Dictionary-Attack' target='_blank' rel="noreferrer"><GoLinkExternal/></a>
               </span>
               <h3>Dictionary Attack</h3>
               <p>A Scrabble like game where users try to find the most amount of words from a given set of letters</p>
@@ -108,7 +108,7 @@ const Projects = () => {
             <div className='card'>
               <span className='card-icons'>
                 <AiOutlineFolder/>
-                <a href='https://github.com/davidsquines/Eleos' target='_blank'><GoLinkExternal/></a>
+                <a href='https://github.com/davidsquines/Eleos' target='_blank' rel="noreferrer"><GoLinkExternal/></a>
               </span>
               <h3>Eleos</h3>
               <p>A virtual desktop assistant made to help me as I work on my computer</p>
@@ -120,7 +120,7 @@ const Projects = () => {
             <div className='card'>
               <span className='card-icons'>
                 <AiOutlineFolder/>
-                <a href='https://github.com/davidsquines/PostgresRDS_Springboot_Docker_EC2' target='_blank'><GoLinkExternal/></a>
+                <a href='https://github.com/davidsquines/PostgresRDS_Springboot_Docker_EC2' target='_blank' rel="noreferrer"><GoLinkExternal/></a>
               </span>
               <h3>AWS Springboot Microservice</h3>
               <p>A RESTful API created using Springboot and hosted via AWS EC2 and Docker</p>

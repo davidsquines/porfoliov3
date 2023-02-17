@@ -17,7 +17,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="intro-pic">
-            <img src={profilePic} className='profile-pic'/>
+            <img src={profilePic} className='profile-pic' alt='David Quines'/>
           </div>
           </Fade>
         </div>
@@ -27,10 +27,10 @@ const Hero = () => {
           <Fade direction='up' delay={2000} duration={500} triggerOnce>
             <ul className='social-media-icons'>
               
-              <li><a href='https://www.instagram.com/dsqsfl' target='_blank'><AiFillInstagram/></a></li>
-              <li><a href='https://github.com/davidsquines' target='_blank'><AiFillGithub/></a></li>
-              <li><a href='https://www.linkedin.com/in/david-quines7' target='_blank'><AiFillLinkedin/></a></li>
-              <li><a href="mailto:davidasquines@gmail.com" target='_blank'><AiFillMail/></a></li>
+              <li><a href='https://www.instagram.com/dsqsfl' target='_blank' rel="noreferrer"><AiFillInstagram/></a></li>
+              <li><a href='https://github.com/davidsquines' target='_blank' rel="noreferrer"><AiFillGithub/></a></li>
+              <li><a href='https://www.linkedin.com/in/david-quines7' target='_blank' rel="noreferrer"><AiFillLinkedin/></a></li>
+              <li><a href="mailto:davidasquines@gmail.com" target='_blank' rel="noreferrer"><AiFillMail/></a></li>
             </ul>
             </Fade>
           </div>
